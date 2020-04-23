@@ -12,9 +12,9 @@ process.env.FIRMA = process.env.FIRMA || 'firma-super-secreta';
 let urlDB;
 
 if (process.env.NODE_ENV === 'dev') {
-    urlDB = 'mongodb://localhost:27017/Starbucks';
+    urlDB = 'mongodb://localhost:27017/bibliotecaa';
 } else {
-    urlDB = ''
+    urlDB = 'mongodb+srv://admin:admin@cluster0-5gwad.mongodb.net/bibliotecaa?retryWrites=true&w=majority'
 }
 
 process.env.URLDB = urlDB;
